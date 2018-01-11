@@ -28,6 +28,10 @@
     if (_minZoomLevel != nil) {
         options[MGLTileSourceOptionMinimumZoomLevel] = _minZoomLevel;
     }
+
+    if(_tileSize != nil) {
+        options[MGLTileSourceOptionTileSize] = _tileSize;
+    }
     
     if (_tms) {
         options[MGLTileSourceOptionTileCoordinateSystem] = [NSNumber numberWithUnsignedInteger:MGLTileCoordinateSystemTMS];
